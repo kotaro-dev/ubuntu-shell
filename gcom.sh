@@ -1,6 +1,8 @@
 #!/bin/sh
 
-nlog=gcom.log
+fnm=${0##*/}
+nlog=${fnm%.*}.log
+
 head="user,system,elapsed,cpu,text,data,max,inputs,outputs,major,minor,swaps"
 fmat="%U, %S, %E, %P, %X, %D, %M, %I, %O, %F, %R, %W"
 echo $nlog
