@@ -3,8 +3,8 @@
 fnm=${0##*/}
 nlog=${fnm%.*}.log
 
-head="user,system,elapsed,cpu,text,data,max,inputs,outputs,major,minor,swaps"
-fmat="%U, %S, %E, %P, %X, %D, %M, %I, %O, %F, %R, %W"
+head="real,user,system,elapsed,cpu,text,data,max,inputs,outputs,major,minor,swaps"
+fmat="%e, %U, %S, %E, %P, %X, %D, %M, %I, %O, %F, %R, %W"
 echo $nlog
 
 echo start 10000 time git commit >$nlog
