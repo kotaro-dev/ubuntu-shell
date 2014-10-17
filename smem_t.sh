@@ -10,7 +10,7 @@ echo monitor start
 ps aux |grep USER|grep -v grep >$nlog
 while true
 do
- ps aux|grep [g]it >>$nlog
+ ps aux|grep [g]it |grep -v time >>$nlog
 # sleep 1
 # usleep 100000  #0.1s
  sleepenh 0.1 > /dev/null 
